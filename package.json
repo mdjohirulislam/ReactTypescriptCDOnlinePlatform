@@ -1,0 +1,75 @@
+{
+  "name": "online-platform-001",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.41",
+    "@types/react-helmet": "^6.1.5",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.1.3",
+    "concurrently": "^7.2.2",
+    "cors": "^2.8.5",
+    "craco": "^0.0.3",
+    "date-fns": "^2.29.2",
+    "express": "^4.18.1",
+    "express-pino-logger": "^7.0.0",
+    "helmet": "^5.1.0",
+    "i": "^0.3.7",
+    "npm": "^8.18.0",
+    "pino": "^8.4.2",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.34.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-test-renderer": "^18.2.0",
+    "svgo": "^2.8.0",
+    "swr": "^1.3.0",
+    "tailwindcss": "^3.1.4",
+    "typescript": "^4.7.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "client": "react-scripts start",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:8080",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-router": "^5.1.18",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-test-renderer": "^18.0.0",
+    "autoprefixer": "^9.8.8",
+    "env-cmd": "^10.1.0"
+  }
+}
